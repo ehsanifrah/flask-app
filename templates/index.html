@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple App</title>
+</head>
+<body>
+    <h1>Entries</h1>
+    <ul>
+        {% for entry in entries %}
+        <li><strong>{{ entry['title'] }}</strong>: {{ entry['content'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add New Entry</a>
+</body>
+</html>
